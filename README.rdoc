@@ -1,3 +1,3 @@
 Example application with usage of {ActionView django-like template inheritance}[https://github.com/neaf/actionview_template_inheritance].
 
-Look around the app/views folder. There're only 6 files in there!
+Look around the app/views folder - there're only 6 files in there. And make sure to run it!
