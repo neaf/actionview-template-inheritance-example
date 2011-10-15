@@ -1,7 +1,7 @@
 = inherit 'settings/base' do
-  - block(:settings_page) do
+  = block(:settings_page) do
     .content
       %h2 Profile settings
       %p Probably a form for profile settings should lie here. This is just an example though so why bother?
 
-  - block(:footer_tip, "You can skip levels when defining block content. No block(:footer_tip) in settings/base.html.haml file")
+  = block(:footer_tip, "You can skip levels when defining block content. No block(:footer_tip) in settings/base.html.haml file")

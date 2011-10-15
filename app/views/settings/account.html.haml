@@ -1,7 +1,7 @@
 = inherit 'settings/base' do
-  - block(:settings_page) do
+  = block(:settings_page) do
     .content
       %h2 Account settings
       %p Fancy changing your username or password?
 
-  - enhance_block(:footer_tip, "Look who's there on the right!")
+  = enhance_block(:footer_tip, "Look who's there on the right!")
