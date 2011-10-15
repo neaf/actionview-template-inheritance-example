@@ -1,0 +1,100 @@
+body {
+  background: #fafafa;
+  color: #666;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+  margin: 2em auto;
+  width: 80%;
+  max-width: 960px;
+}
+
+a { color: #333; }
+a:visited { color: #666; }
+a:hover { color: #000; }
+
+h1 {
+  font-weight: normal;
+}
+
+nav.main {
+  margin-bottom: 2em;
+}
+
+nav.main ul {
+  padding: 0;
+}
+
+nav.main li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav.main li a {
+  padding: 0.3em 1em;
+  border-bottom: 3px #8ce000 solid;
+  text-decoration: none;
+}
+
+nav.main li a:hover {
+  border-color: #42c3e1;
+}
+
+nav.main li.settings {
+  float: right;
+}
+
+footer.main {
+  margin-top: 4em;
+}
+
+footer.main .tip:before {
+  content: "Tip of the day: ";
+  font-size: 0.83em;
+  font-weight: bold;
+  color: #999;
+}
+
+footer.main nav {
+  border-top: 1px dotted #999;
+}
+
+footer.main nav ul {
+  padding: 0;
+}
+
+footer.main nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+.settings-container {
+  margin: 3em;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.settings-container nav {
+  background: #333;
+}
+
+.settings-container nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.settings-container nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+.settings-container nav a {
+  display: block;
+  padding: 0.3em 0.5em;
+  color: #ccc;
+}
+
+.settings-container .content {
+  padding: 1em;
+}

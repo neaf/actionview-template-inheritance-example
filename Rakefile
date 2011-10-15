@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TemplateInheritanceTest::Application.load_tasks
+TemplateInheritanceExample::Application.load_tasks

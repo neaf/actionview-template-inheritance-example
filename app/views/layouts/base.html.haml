@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title= block(:page_title, "Template inheritance example")
+    = block(:css) do
+      = stylesheet_link_tag "main"
+    = csrf_meta_tag
+
+  %body{ :class => block(:body_class) }
+    .container
+      %header#header
+        = block(:header) do
+          %h1.site-name
+            Template inheritance test (header)
+
+          %nav.main
+            = block(:navigation) do
+              = render :partial => "shared/public_nav"
+
+      %section#content
+        = block(:content)
+
+      %footer.main
+        %h2 Footer
+        %p.tip
+          = block(:footer_tip) do
+            No more content_for, yield mess!
+        %nav
+          - # If you define content in the same file (line 16) it has to happen
+          - # above the second call.
+          = block(:navigation)

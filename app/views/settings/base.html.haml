@@ -1,0 +1,15 @@
+= inherit 'layouts/base' do
+  - block(:content) do
+    .settings-container
+      %nav
+        %ul
+          %li= link_to "Profile", :profile_settings
+          %li= link_to "Account", :account_settings
+          %li= link_to "Billing", :billing_settings
+
+      .content
+        = block(:settings_page)
+
+  - block(:body_class, "settings")
+  - enhance_block(:css) do
+    = stylesheet_link_tag "settings"

@@ -1,3 +1,8 @@
+PATH
+  remote: ../actionview_template_inheritance
+  specs:
+    actionview_template_inheritance (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -32,6 +37,12 @@ GEM
     arel (2.2.1)
     builder (3.0.0)
     erubis (2.7.0)
+    haml (3.1.3)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hike (1.2.1)
     i18n (0.6.0)
     json (1.6.1)
@@ -84,4 +95,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview_template_inheritance!
+  haml-rails
   rails (= 3.1.1)
